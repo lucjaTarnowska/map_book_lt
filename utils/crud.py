@@ -9,3 +9,12 @@ def add_user(lista: list) -> None:
     liczba_postow = int(input("podaj liczbe postów użytkownika: "))
     new_user = {"name": imie, "surname": nazwisko, "posts": liczba_postow, }
     lista.append(new_user)
+
+def search_user(users: list):
+    imie = input("Podaj imię: ")
+    for user in users:
+        if user["name"] == imie:
+            print(user)
+
+
+
