@@ -16,5 +16,9 @@ def search_user(users: list):
         if user["name"] == imie:
             print(user)
 
-
+def remove_user(users: list):
+    imie = input("Podaj imię: ")
+    for user in users:
+        if user["name"] == imie:
+            users.remove(user)
 
