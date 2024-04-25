@@ -15,7 +15,7 @@ def single_map(user_location: str) -> None:
     map.save(f'./{user_location}.html')
 
 
-def full_map(users: str) -> None:
+def full_map(users: list) -> None:
     lista_wspolrzednych = []
     map = folium.Map(location=[52, 21], zoom_start=8)
     for user in users:
